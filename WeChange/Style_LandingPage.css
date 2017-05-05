@@ -1,0 +1,35 @@
+﻿*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.LeftTrending
+{
+    width: 60%;
+    float: left;
+    height: 800px;
+    margin-left: 10%;
+    margin-right: 5%;
+}
+.RightPanelHolder
+{
+    width: 20%;
+    float: left;
+    
+}
+.RightPanels
+{
+    height: 250px;
+    margin: 10px auto;
+    width: 100%;
+}
+section
+{
+    margin: 10px auto;
+    min-height: 100px;
+    width: 100%;
+    border-color:red;
+    overflow: hidden;
+    
+}

@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HeaderFooter.master.cs" Inherits="WeChange.HeaderFooter" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" href="MasterStyleSheet.css" />
+    <link href="Stylinger.css" rel="stylesheet" />
+    <link href="Style_LandingPage.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+<header>
+   <a href="LandingPage.aspx" id="LogoLink" class="LogoHolder">
+       <img src="Images/WeChange_Logo.png" height="60" width="60" alt="WeChange Logo" />
+   </a>
+    <nav>
+        <a href="LandingPage.aspx">Home</a>
+        <a href="NewPetition.aspx">Create Petition</a>
+        <a href="BrowsePetitions.aspx">Explore</a>
+        <a href="MyPetitions.aspx" runat="server" id="hl_mp">My Peitions</a>
+        <a href="Login.aspx" runat="server" id="Login">Login</a>
+        <asp:Button ID="btn_Logout" runat="server" Text="Logout" Visible="false" OnClick="btn_Logout_Click" />
+    </nav>
+</header>
+        <asp:ContentPlaceHolder ID="MainBody" runat="server">
+
+        </asp:ContentPlaceHolder>
+<footer>
+    <div id="LogoHolder" class="LeftLoose">
+        <img src="Images/WeChange_LogoUP.png" />
+    </div>
+    <div id="QuickLinksColumn" class="FooterColumns">
+        <h5 class="FooterHeads">Quick links</h5>
+        <a href="#">About</a><br /><br />
+        <a href="#">Explore</a><br /><br />
+        <a href="#">Victories/Blog</a><br /><br />
+    </div>
+    <div id="SupportColumn" class="FooterColumns">
+        <h5 class="FooterHeads">Support/help</h5>
+        <a href="#">Guide</a><br />
+        <a href="#">Privacy</a><br />
+        <a href="#">Policy</a><br />
+        <a href="#">Terms and Conditions</a><br />
+    </div>
+    <div id="ConnectColumn" class="FooterColumns">
+        <h5 class="FooterHeads">Connect</h5>
+        <a href="#">Facebook</a><br />
+        <a href="#">Twitter</a><br />
+    </div>
+</footer>
+    </form>
+</body>
+</html>
